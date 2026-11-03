@@ -1,0 +1,27 @@
+{
+  "name": "codearts-req-mcp-server",
+  "version": "1.0.0",
+  "description": "华为云 CodeArts 需求管理（Req）MCP Server：create_project / list_projects（stdio，AK/SK 签名）",
+  "type": "module",
+  "main": "server.mjs",
+  "bin": {
+    "codearts-req-mcp-server": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "lib/"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/signer.test.mjs test/tools.test.mjs test/server.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "config": "node scripts/print-config.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2"
+  },
+  "license": "MIT"
+}

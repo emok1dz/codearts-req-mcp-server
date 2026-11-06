@@ -136,7 +136,7 @@ npm run smoke -- --create TestDemo   # 额外创建一个 scrum 项目
 
 | 环境变量 | 必填 | 说明 |
 | --- | --- | --- |
-| `CODEARTS_REQ_ENDPOINT` | 是* | 需求管理终端节点，如 `https://projectman-ext.cn-north-4.myhuaweicloud.com`（其他区域见 API 文档 1.2 节：cn-north-1、cn-east-3、cn-south-1 等） |
+| `CODEARTS_REQ_ENDPOINT` | 是* | 需求管理终端节点，须与开通 CodeArts 的区域一致，如北京四 `https://projectman-ext.cn-north-4.myhuaweicloud.com`、上海一 `https://projectman-ext.cn-east-3.myhuaweicloud.com`（其他区域见 API 文档 1.2 节：cn-north-1、cn-east-3、cn-south-1 等） |
 | `CODEARTS_REQ_REGION` | 否 | 可以代替 ENDPOINT，例如 `cn-east-3`，程序会自动拼出终端节点 |
 | `CODEARTS_REQ_AK` | 是 | Access Key Id |
 | `CODEARTS_REQ_SK` | 是 | Secret Access Key |
